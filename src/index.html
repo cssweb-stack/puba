@@ -5,24 +5,39 @@ permalink: "/"
 ---
 <div class="page-section">
 <div class="container content-section">
-<div class="row gx-0 gx-sm-5 gx-lg-5">
-<div class="col-12">
+<div class="row content-sidebar content-sidebar--three-resources gy-4 gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12 col-md-8 col-lg-9">
 <h1>Education for Public Service</h1>
 <p>Welcome to the Public Administration Program (PUBA) at the University of Hawaiʻi at Mānoa, an innovative graduate-level program dedicated to the enhancement of public service and institutions. Since 1984, our program has been committed to:</p>
 <ul><li>Increasing leadership resources in Hawaiʻi, the U.S., and the Asia-Pacific region.</li>
 <li>Building organizational and community collaborations for creative problem-solving.</li>
 <li>Nurturing connections between participants and a network of change agents.</li></ul>
 <p>We offer a <a href="{{ '/naspaa/accreditation.html' | url }}">NASPAA accredited</a> MPA with concentrations in public service leadership, nonprofit management, and public policy.</p>
+<hr>
 <h2>What do people in public service need to know to be effective in their work?</h2>
 <p>Our program is built around this essential question. To answer it, we:</p>
 <ul><li>Bring together participants from a rich variety of backgrounds to share experiences.</li>
 <li>Use collaborative teaching to view issues from different perspectives.</li>
 <li>Emphasize active engagement in classes.</li>
 <li>Continuously apply theory to practice.</li></ul>
-<h2>Join the PUBA program</h2>
-<p><a href="{{ '/applications-admissions.html' | url }}">Apply for Admission</a></p>
-<p>Application deadlines: April 30 and November 1</p>
 </div>
+<aside class="col-12 col-md-4 col-lg-3 sidebar-resources" aria-label="Accreditation, rankings, and program next steps">
+{% from "layouts/content/graphic-callout.njk" import graphicCallout %}
+<div class="row sidebar-resources-grid gx-2 gx-md-0">
+<div class="col-4 col-md-12">
+{{ graphicCallout("/naspaa/requirements.html", "/media/units/puba/naspaa.svg", "NASPAA Requirements", "", 999, 472.6, "sidebar-media--featured", "center", "mb-1") }}
+</div>
+<div class="col-4 col-md-12">
+{{ graphicCallout("https://www.usnews.com/best-graduate-schools/top-public-affairs-schools/university-of-hawaii-manoa-141574", "/media/units/puba/badge-best-grad-schools.svg", "Public Affairs | 2026", "", 250, 222.2, "sidebar-media--badge", "center", "mb-1") }}
+</div>
+<div class="col-4 col-md-12">
+{% set programLabel = "PUBA program" %}
+{% set stackButtonSets = true %}
+{% set hideTestimonials = true %}
+{% include "layouts/content/program-button-sets.njk" %}
+</div>
+</div>
+</aside>
 </div>
 </div>
 </div>
