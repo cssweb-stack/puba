@@ -23,14 +23,18 @@ permalink: "/"
 </div>
 <aside class="col-12 col-md-4 col-lg-3 sidebar-resources" aria-label="Accreditation, rankings, and program next steps">
 {% from "layouts/content/graphic-callout.njk" import graphicCallout %}
-<div class="row sidebar-resources-grid gx-2 gx-md-0">
-<div class="col-4 col-md-12">
+<div class="row sidebar-resources-grid gx-3 gx-md-0">
+<div class="col-6 col-md-12">
+<div class="d-grid gap-4">
+<div>
 {{ graphicCallout("/naspaa/requirements.html", "/media/units/puba/naspaa.svg", "NASPAA Requirements", "", 999, 472.6, "sidebar-media--featured", "center", "mb-1") }}
 </div>
-<div class="col-4 col-md-12">
+<div>
 {{ graphicCallout("https://www.usnews.com/best-graduate-schools/top-public-affairs-schools/university-of-hawaii-manoa-141574", "/media/units/puba/badge-best-grad-schools.svg", "Public Affairs | 2026", "", 250, 222.2, "sidebar-media--badge", "center", "mb-1") }}
 </div>
-<div class="col-4 col-md-12">
+</div>
+</div>
+<div class="col-6 col-md-12">
 {% set programLabel = "PUBA program" %}
 {% set stackButtonSets = true %}
 {% set hideTestimonials = true %}
