@@ -2,19 +2,30 @@
 layout: shell.njk
 title: "Education for Public Service"
 permalink: "/"
-description: "This will be the meta description."
+description: "Explore UH Mānoa’s Public Administration Program, offering a NASPAA-accredited MPA and graduate certificates for leadership in public and nonprofit service."
 ---
+{% from "layouts/content/graphic-callout.njk" import graphicCallout %}
 <div class="page-section">
 <div class="container content-section">
-<div class="row content-sidebar content-sidebar--three-resources gy-4 gx-0 gx-sm-5 gx-lg-5">
-<div class="col-12 col-md-8 col-lg-9">
+<div class="row gy-4 gx-0 gx-md-5">
+<div class="col-12 col-md-8 col-xl-9">
 <h1>PUBA: Education for Public Service</h1>
 <p>Welcome to the Public Administration Program (PUBA) in the College of Social Sciences at the University of Hawaiʻi at Mānoa, an innovative graduate-level program dedicated to the enhancement of public service and institutions. Since 1984, our program has been committed to:</p>
 <ul><li>Increasing leadership resources in Hawaiʻi, the U.S., and the Asia-Pacific region.</li>
 <li>Building organizational and community collaborations for creative problem-solving.</li>
 <li>Nurturing connections between participants and a network of change agents.</li></ul>
 <p>We offer a <a href="{{ '/naspaa/accreditation.html' | url }}">NASPAA accredited</a> MPA with concentrations in public service leadership, nonprofit management, and public policy.</p>
-<hr>
+</div>
+<aside class="col-12 col-md-4 col-xl-3" aria-label="NASPAA accreditation">
+{{ graphicCallout("/naspaa/requirements.html", "/media/units/puba/naspaa.svg", "NASPAA Requirements", "", 999, 472.6, "sidebar-media--featured", "center", "mb-1") }}
+</aside>
+</div>
+</div>
+</div>
+<div class="page-section page-section--gray">
+<div class="container content-section">
+<div class="row gy-4 gx-0 gx-md-5">
+<div class="col-12 col-xl-6">
 <h2>What do people in public service need to know to be effective in their work?</h2>
 <p>Our program is built around this essential question. To answer it, we:</p>
 <ul><li>Bring together participants from a rich variety of backgrounds to share experiences.</li>
@@ -22,26 +33,14 @@ description: "This will be the meta description."
 <li>Emphasize active engagement in classes.</li>
 <li>Continuously apply theory to practice.</li></ul>
 </div>
-<aside class="col-12 col-md-4 col-lg-3 sidebar-resources" aria-label="Accreditation, rankings, and program next steps">
-{% from "layouts/content/graphic-callout.njk" import graphicCallout %}
-<div class="row sidebar-resources-grid gx-3 gx-md-0">
-<div class="col-6 col-md-12">
-<div class="d-grid gap-4">
-<div>
-{{ graphicCallout("/naspaa/requirements.html", "/media/units/puba/naspaa.svg", "NASPAA Requirements", "", 999, 472.6, "sidebar-media--featured", "center", "mb-1") }}
-</div>
-<div>
+<aside class="col-12 col-md-6 col-xl-3" aria-label="Public affairs ranking">
 {{ graphicCallout("https://www.usnews.com/best-graduate-schools/top-public-affairs-schools/university-of-hawaii-manoa-141574", "/media/units/puba/badge-best-grad-schools.svg", "Public Affairs | 2026", "", 250, 222.2, "sidebar-media--badge", "center", "mb-1") }}
-</div>
-</div>
-</div>
-<div class="col-6 col-md-12">
+</aside>
+<aside class="col-12 col-md-6 col-xl-3" aria-label="Program next steps">
 {% set programLabel = "PUBA program" %}
 {% set stackButtonSets = true %}
 {% set hideTestimonials = true %}
 {% include "layouts/content/program-button-sets.njk" %}
-</div>
-</div>
 </aside>
 </div>
 </div>
