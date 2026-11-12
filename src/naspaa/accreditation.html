@@ -6,14 +6,20 @@ description: "This will be the meta description."
 ---
 <div class="page-section">
 <div class="container content-section">
-<div class="row gx-0 gx-sm-5 gx-lg-5">
-<div class="col-12">
+<div class="row gy-4 gx-0 gx-md-5 profile-page">
+<div class="col-12 col-md-8 profile-biography">
 <h1>NASPAA Accreditation</h1>
-<p>Network of Schools of Public Policy, Affairs, and Administration (NASPAA) represents The Global Standard in Public Service Education. As stated by <a href="http://naspaa.org/">NASPAA</a>,</p>
-<p><a href="https://www.naspaa.org/accreditation">NASPAA accreditation</a> provides a reliable and trustworthy indication of value and quality to potential students. Accreditation signals that programs meet a field-wide standard of quality, continuously seek to improve their operations, and practice truth in advertising. Students can be reasonably assured that, at a NASPAA-accredited program, they will be provided the resources to complete their program, achieve established learning objectives, and obtain public service employment.</p>
+<p>Network of Schools of Public Policy, Affairs, and Administration (NASPAA) represents The Global Standard in Public Service Education. As stated by <a href="http://naspaa.org/">NASPAA</a>,</p>
+<blockquote class="blockquote">
+<p><a href="https://www.naspaa.org/accreditation">NASPAA accreditation</a> provides a reliable and trustworthy indication of value and quality to potential students. Accreditation signals that programs meet a field-wide standard of quality, continuously seek to improve their operations, and practice truth in advertising. Students can be reasonably assured that, at a NASPAA-accredited program, they will be provided the resources to complete their program, achieve established learning objectives, and obtain public service employment.</p>
+</blockquote>
 <p>Accreditation for public affairs programs is voluntary and indicates that the accredited programs have chosen to undergo a peer-review process and have met a set of standards that prove them to be high-quality programs.</p>
-<p>View website <a href="{{ '/naspaa/requirements.html' | url }}">NASPAA requirements</a>.</p>
+
 </div>
+<aside class="col-12 col-md-4 profile-sidebar" aria-label="NASPAA requirements">
+{% from "layouts/content/graphic-callout.njk" import graphicCallout %}
+{{ graphicCallout("/naspaa/requirements.html", "/media/units/puba/naspaa.svg", "NASPAA Requirements", "", 999, 472.6, "sidebar-media--featured", "center", "mb-1") }}
+</aside>
 </div>
 </div>
 </div>

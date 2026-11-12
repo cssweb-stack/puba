@@ -6,28 +6,22 @@ description: "This will be the meta description."
 ---
 <div class="page-section">
 <div class="container content-section">
-<div class="row content-sidebar gy-4 gx-0 gx-sm-5 gx-lg-5">
-<div class="col-12 col-lg-9">
+{% from "layouts/content/image-text-row.njk" import imageTextRow %}
+{% call imageTextRow('/media/branding/logos/uhf.svg', 230, 59.33, 'University of Hawaiʻi Foundation', true, 'https://www.uhfoundation.org/', 'sidebar-media') %}
 <h1>Support PUBA</h1>
-<p>The <a href="https://giving.uhfoundation.org/funds/12546404">Public Administration Enrichment Fund</a> was established to support the development of the Public Administration Program, its students and faculty, and its public service activities. Support includes funding of research, teaching, hospitality, travel, and any other needs of the department.</p>
-<p>Contributions of any size are sincerely appreciated.</p>
-</div>
-<aside class="col-12 col-lg-3 sidebar-resources" aria-label="UH Foundation">
-<a href="https://www.uhfoundation.org/">
-<img class="sidebar-media" src="{{ '/media/branding/logos/uhf.svg' | url }}" alt="University of Hawaiʻi Foundation">
-</a>
-</aside>
-</div>
+<p>The <a href="https://giving.uhfoundation.org/funds/12546404">Public Administration Enrichment Fund</a> was established to support the development of the Public Administration Program, its students and faculty, and its public service activities. Support includes funding of research, teaching, hospitality, travel, and any other needs of the department.</p>
+<p class="appreciation"><span class="icon-text">Contributions of any size are sincerely appreciated.</span></p>
+{% endcall %}
 </div>
 </div>
 
-<div class="page-section">
+<div class="page-section page-section--gray">
 <div class="container content-section">
 <div class="row gx-0 gx-sm-5 gx-lg-5">
 <div class="col-12">
 <h2>Additional Funds</h2>
 <ul><li><a href="https://www.uhfoundation.org/give/giving-opportunity/dick-pratt-scholarship">Dick Pratt Scholarship</a> - Support exceptional public leadership.</li>
-<li><a href="https://giving.uhfoundation.org/funds/12098622">Herman S. Doi Memorial Fellowship Fund</a> - Used to promote greater success to public service education for those most likely to make a significant contribution to the State of Hawai'i through work in the public sector.</li>
+<li><a href="https://giving.uhfoundation.org/funds/12098622">Herman S. Doi Memorial Fellowship Fund</a> - Used to promote greater success to public service education for those most likely to make a significant contribution to the State of Hawaiʻi through work in the public sector.</li>
 <li><a href="https://giving.uhfoundation.org/funds/20365203">Wood Pacific Island Health Administrators Scholarship</a> - Provides students from Pacific Island nations who are seeking an MPA degree.</li></ul>
 </div>
 </div>
