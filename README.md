@@ -6,7 +6,7 @@ Run `npm run dev` for http://localhost:8084/ or `npm run build` to generate `_si
 Shared data and heroes live in `../css-shared/src/data/units/puba/` and
 `../css-shared/src/media/heroes/puba/`. Layout helpers are intentionally enabled.
 
-See [the migration notes](https://github.com/cssweb-stack/css-shared/blob/main/docs/puba-migration.md) for source mappings,
+See [the migration notes](https://github.com/cssweb-stack/css-shared/blob/main/docs/units/puba/puba-migration.md) for source mappings,
 validation, and deferred profiles, news-feed content, and shared policy work.
 
 ## Work on another computer
